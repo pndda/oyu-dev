@@ -21,14 +21,13 @@ function mnrta_scripts() {
  wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/assets/css/custom.css');  
  wp_enqueue_style( 'style', get_stylesheet_uri() );
 
- wp_enqueue_style( 'prefix-font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', true );
+ wp_enqueue_style( 'prefix-font-awesome', 'hxttps://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', true );
   
  wp_register_script( 'jQuery', '//code.jquery.com/jquery-3.5.1.slim.min.js');
  wp_enqueue_script('jQuery');
  wp_register_script( 'Popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
  wp_enqueue_script('Popper');
- wp_enqueue_script('video-jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
- wp_enqueue_script( 'video', get_template_directory_uri() . '/assets/js/video.js', array(), true, true ); 
+
  
 
 //  wp_enqueue_script( 'boostrap', get_template_directory_uri() . '/assets/js/bootstrap.js', null, null, true );
@@ -36,6 +35,8 @@ function mnrta_scripts() {
  wp_enqueue_script('bootstrap-scripts', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js');
 
  wp_enqueue_script( 'main-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), true, true );
+
+
 
 
  
@@ -74,6 +75,26 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 
 }, 10, 4 );
 
+// add woocommerce theme support 
+
+function oyu_add_woocommerce_support() {
+	add_theme_support( 'woocommerce', array(
+		'thumbnail_image_width' => 150,
+		'single_image_width'    => 300,
+
+        'product_grid'          => array(
+            'default_rows'    => 3,
+            'min_rows'        => 2,
+            'max_rows'        => 8,
+            'default_columns' => 4,
+            'min_columns'     => 2,
+            'max_columns'     => 5,
+        ),
+	) );
+}
+add_action( 'after_setup_theme', 'oyu_add_woocommerce_support' );
+
+
 
 add_filter( 'woocommerce_account_menu_items', 'bbloomer_rename_address_my_account', 999 );
  
@@ -89,6 +110,8 @@ unset($items['edit-address']);
 return $items;
 }
 */
+
+
 
 
 
