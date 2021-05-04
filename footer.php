@@ -1,7 +1,5 @@
 
 
-</main>
-
 <footer>
     <div class="footer-nav">
         <div class="container">

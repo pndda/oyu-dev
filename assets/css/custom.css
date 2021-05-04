@@ -1,0 +1,108 @@
+/* Shop page */
+.woocommerce #sidebar{
+    display: none;
+}
+
+.woocommerce-breadcrumb, .woocommerce .woocommerce-result-count, .woocommerce-products-header, .woocommerce-shop a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart, .woocommerce-shop a.button.product_type_simple, .woocommerce .woocommerce-ordering, .woocommerce-shop ul.products li.product .price {
+    display: none;
+}
+
+
+
+.woocommerce-page .products img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 36vw !important;
+    height: 100% !important;
+    max-width: unset;
+}
+
+/* .woocommerce-page ul.products {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.woocommerce-page ul.products li.product {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.woocommerce-shop ul.products li.product .woocommerce-loop-product__title{
+    padding: 0.7em 0 2em;
+    width: 36vw;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+
+.woocommerce-shop ul.products li.product a img{
+    margin: 0 auto;
+}
+
+
+/* .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+width: 100%;
+} */
+
+/* single product  */
+
+.single-product .product_meta, .single-product .related{
+    display: none;
+}
+
+/*  CHECKOUT PAGE  */
+.woocommerce-checkout{
+color:white; 
+}
+.woocommerce-checkout main{
+   padding: 50px;
+    }
+.woocommerce-checkout .form-row-wide{
+padding-top: 17px
+}
+
+.woocommerce-checkout input, .woocommerce-checkout select, .woocommerce-checkout textarea{
+    background-color:unset!important;
+    border: unset !important;
+    border-bottom: 1px solid white !important;
+    color: white;
+    padding: 5px;
+}
+
+
+/* .products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(560px, 560px))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(560px, 560px));
+    grid-gap: 1rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+} */
+
+
+/* MY ACCOUNT */
+
+form.woocommerce-form-login{
+width: 50%;
+}
+
+.woocommerce-account form input{
+background-color: unset;
+border: unset;
+border-bottom: 1px solid white;
+color: white;
+}
+
+/* GENERAL */
+
+main{
+    padding: 30px 50px;
+    color: white;
+}
+
+.select2-container--default .select2-selection--single {
+    background: unset;
+    border: none;
+    border-bottom: 1px solid white;
+}

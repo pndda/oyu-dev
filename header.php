@@ -9,7 +9,7 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body <? body_class(); ?>>
     <header>
         <div class="main-navbar hide-mobile">
             <div class="container">
@@ -107,4 +107,3 @@
         </div>
     </header>
     <div class="hidden-nvigation"></div>
-    <main>
