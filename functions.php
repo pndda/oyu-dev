@@ -82,7 +82,7 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 function oyu_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
 		'thumbnail_image_width' => 150,
-		'single_image_width'    => 300,
+		'single_image_width'    => 550,
 
         'product_grid'          => array(
             'default_rows'    => 3,

@@ -131,3 +131,13 @@ main{
   .scrolled-up{
     transform:translateY(0); transition: all 0.3s ease-in-out;
   }
+
+  /* PRODUCT DETAIL PAGE  */
+
+  .woocommerce-tabs.wc-tabs-wrapper{
+    display: none;
+  }
+
+  #primary.content-area{
+      min-height:90vh; 
+  }
