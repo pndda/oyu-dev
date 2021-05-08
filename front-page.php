@@ -9,12 +9,16 @@
     <section class="hero__home">
         <div class="container">
             <h1>
-                oyu studio is a studio to create work which connects.
+                <? the_content() ?> 
             </h1>
         </div>
     </section>
-    <section class="devision__img" style="background-image:url(/img/home-devide.jpeg);">
-        
+
+
+    <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+
+    <section class="devision__img" style="background-image:url(<?php echo $url ?>);">
+   
     </section>
 </main>
 

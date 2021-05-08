@@ -1,13 +1,16 @@
 /*
-Theme Name: Oyu Theme
-Author: Panadda Manarata
-Description: Custom theme made for Oyu
+Theme name: oyu theme 
+Description: Custom oyu theme developed by studio pndda
+Author: Panadda Manarata 
 Version: 1.0
+
+
 */
 
 
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+
+}/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -194,14 +197,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #eb6e34;
-}
-
-a:visited {
-  text-decoration: underline;
-}
-
 .hide-mobile {
   display: none;
 }
@@ -231,6 +226,12 @@ nav ul li {
   z-index: 30;
   padding: 50px;
   background: #030303;
+}
+
+.main-navbar .navbar-logo:hover {
+  color: white;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .main-nav {
@@ -271,11 +272,11 @@ nav ul li {
 }
 
 .main-navbar .main-menu .menu-item a:hover {
-  text-decoration: underline;
+  border-bottom: 0.8px solid white;
 }
 
 .main-navbar .main-menu .menu-item a:active {
-  text-decoration: underline;
+  border-bottom: 0.8px solid white;
 }
 
 @media (min-width: 1200px) {
@@ -301,7 +302,9 @@ nav ul li {
 }
 
 .mobile-navbar .logo:hover {
-  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white;
 }
 
 @media (min-width: 567px) {
@@ -442,8 +445,25 @@ nav ul li {
   }
 }
 
+.cred-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.cred-menu ul li {
+  padding: 0 5px;
+}
+
 .footer-nav {
-  padding: 50px;
+  padding: 50px 50px 25px 50px;
 }
 
 footer nav ul li {
@@ -453,6 +473,20 @@ footer nav ul li {
 }
 
 .footer-credentials {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+.footer-credentials div {
+  padding: 3px 0;
+}
+
+.footer-credentials a {
+  color: #25292c;
+  border-bottom: 0.8px solid  #25292c;
+}
+
+.footer-cred__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,13 +496,33 @@ footer nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8rem;
-  color: #25292c;
 }
 
-.footer-credentials a {
-  color: #25292c;
-  text-decoration: underline;
+@media (min-width: 1050px) {
+  .footer-credentials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.8rem;
+    color: #25292c;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-credentials a {
+    color: #25292c;
+    border-bottom: 0.8px solid  #25292c;
+  }
+  .footer-credentials .footer-cred__left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .hero__home {
@@ -512,13 +566,14 @@ footer nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
+  margin: 50px 0;
 }
 
 .artwork__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(250px, 350px) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  -ms-grid-columns: minmax(560px, 560px) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(560px, 560px));
   grid-gap: 1rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;

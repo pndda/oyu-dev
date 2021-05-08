@@ -15,6 +15,7 @@ add_theme_support( 'starter-content');
 
 
 
+
 function mnrta_scripts() {
 
  wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'); 
@@ -112,6 +113,15 @@ return $items;
 */
 
 
+/*  add svg  */
+
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+    add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 
 

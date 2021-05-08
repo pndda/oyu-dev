@@ -25,18 +25,6 @@
     
     
                     <ul class="mobile-navbar__list d-flex align-items-center ">
-                        <!-- <li class="mobile-navbar__list__item">
-                            <a href="#" class=" ">
-                                <img src="{{directory}}/assets/img/icons/login.svg" width="16" alt="">
-                                login
-                            </a>
-                        </li>
-                        <li class="mobile-navbar__list__item ">
-                            <a href="#" class=" ">
-                                <img src="{{directory}}/assets/img/icons/search_mobile.svg" width="16" alt="">
-                                search
-                            </a>
-                        </li> -->
                         <li class="mobile-navbar__list__item">
                             <div class="mobile-navbar__list__item__link hamburger" id="hamburger-1">
                                 <span class="line"></span>

@@ -38,16 +38,14 @@
                         </li>
 
                     </ul> -->
-                    <? wp_nav_menu(
-                   array(
-                       'theme_location' => 'cart', 
-                       'menu_id'        => 'webshop-icon', 
-                       'menu_class'     => 'webshop-icon'
-                   )
-                   );  ?>
-                    <!-- <ul class="webshop-icon">
-                        cart
-                    </ul> -->
+
+                    <ul class="webshop-icon">
+                        <li>
+                            <a href="" class="cart">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
+                                    alt=""></a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -55,20 +53,18 @@
         <div class="mobile-navbar show-on-mobile">
             <div class="container">
                 <nav class=" d-flex justify-content-between align-items-center trigger-main-nav">
-                <a href="<? bloginfo('url'); ?>" class="navbar-logo">
+                    <a href="<? bloginfo('url'); ?>" class="navbar-logo">
                         <div class="logo">
                             <? bloginfo('name'); ?>
                         </div>
                     </a>
                     <ul class="mobile-navbar__list d-flex align-items-center">
                         <li>
-                            <a href="">cart</a>
+                            <a href="" class="cart">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
+                                    alt=""></a>
                         </li>
-                        <li class="mobile-navbar__list__item">
-                            <a href="#" class="mobile-navbar__list__item__link">
-                                <img src="./assets/img/icons/login.svg" width="16" alt="">
-                            </a>
-                        </li>
+
                         <li class="mobile-navbar__list__item">
                             <div class="mobile-navbar__list__item__link hamburger" id="hamburger-1">
                                 <span class="line"></span>
@@ -84,7 +80,7 @@
 
         <div class="show-on-mobile">
             <nav class="mobile-nav">
-            <? wp_nav_menu(
+                <? wp_nav_menu(
                    array(
                        'theme_location' => 'main-menu', 
                        'menu_id'        => 'mobile-menu', 
