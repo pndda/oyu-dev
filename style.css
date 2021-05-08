@@ -8,12 +8,6 @@ Version: 1.0
 */
 
 
-
-
-}/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -195,6 +189,11 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .hide-mobile {
@@ -472,6 +471,13 @@ footer nav ul li {
   letter-spacing: 0.8px;
 }
 
+.main-footer ul li a:hover {
+  color: white;
+  border-bottom: 0.8px solid white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .footer-credentials {
   margin-top: 20px;
   font-size: 0.8rem;
@@ -484,6 +490,11 @@ footer nav ul li {
 .footer-credentials a {
   color: #25292c;
   border-bottom: 0.8px solid  #25292c;
+}
+
+.footer-credentials a:hover {
+  color: #2f3438;
+  border-bottom: 0.8px solid  #2f3438;
 }
 
 .footer-cred__left {

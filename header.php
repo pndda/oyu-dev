@@ -11,7 +11,7 @@
 
 <body <? body_class(); ?>>
     <header>
-        <div class="main-navbar hide-mobile">
+        <div id="navbar" class="main-navbar hide-mobile sticky-top">
             <div class="container">
                 <nav class="main-nav trigger-main-nav">
                     <a href="<? bloginfo('url'); ?>" class="navbar-logo">
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="mobile-navbar show-on-mobile">
+        <div id="mobnavbar" class="mobile-navbar show-on-mobile">
             <div class="container">
                 <nav class=" d-flex justify-content-between align-items-center trigger-main-nav">
                     <a href="<? bloginfo('url'); ?>" class="navbar-logo">
