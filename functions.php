@@ -22,14 +22,14 @@ function mnrta_scripts() {
  wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/assets/css/custom.css');  
  wp_enqueue_style( 'style', get_stylesheet_uri() );
 
- wp_enqueue_style( 'prefix-font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', true );
-  
- wp_register_script( 'jQuery', '//code.jquery.com/jquery-3.5.1.slim.min.js');
- wp_enqueue_script('jQuery');
- wp_register_script( 'Popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
- wp_enqueue_script('Popper');
+//  wp_register_script( 'jQuery', '//code.jquery.com/jquery-3.5.1.slim.min.js');
+//  wp_enqueue_script('jQuery');
+//  wp_register_script( 'Popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
+//  wp_enqueue_script('Popper');
+ wp_register_script( 'Bootstrap-bundle', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js');
+ wp_enqueue_script('Bootstrap-bundle');
 
- 
+
 
 //  wp_enqueue_script( 'boostrap', get_template_directory_uri() . '/assets/js/bootstrap.js', null, null, true );
 //  wp_enqueue_script( 'boostrap-min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), true, true );
@@ -38,11 +38,6 @@ function mnrta_scripts() {
  wp_enqueue_script( 'main-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), true, true );
  wp_enqueue_script( 'scroll-oyu', get_template_directory_uri() . '/assets/js/scroll.js', array(), true, true );
 
-
-
-
- 
- 
 
 }
 add_action( 'wp_enqueue_scripts', 'mnrta_scripts' );
@@ -82,7 +77,7 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 function oyu_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
 		'thumbnail_image_width' => 150,
-		'single_image_width'    => 550,
+		'single_image_width'    => 450,
 
         'product_grid'          => array(
             'default_rows'    => 3,
@@ -97,21 +92,19 @@ function oyu_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'oyu_add_woocommerce_support' );
 
 
+// function oyu_setup() {
+//     add_theme_support( 'wc-product-gallery-zoom' );
+// }
 
-add_filter( 'woocommerce_account_menu_items', 'bbloomer_rename_address_my_account', 999 );
- 
-function bbloomer_rename_address_my_account( $items ) {
-$items['edit-address'] = 'Delivery Address';
-return $items;
+// add_action( 'after_setup_theme', 'oyu_setup');
+
+add_action( 'after_setup_theme', 'oyu_setup'); 
+function oyu_setup() {
+    // add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 
-/*add_filter( 'woocommerce_account_menu_items', 'bbloomer_remove_address_my_account', 999 );
- 
-function bbloomer_remove_address_my_account( $items ) {
-unset($items['edit-address']);
-return $items;
-}
-*/
 
 
 /*  add svg  */
