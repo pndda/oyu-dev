@@ -19,6 +19,7 @@
             <div class="page-container" >
                 <? the_content() ?>
             </div>
+            
     <? else : ?> 
     <? the_content() ?>
     <? endif; ?>

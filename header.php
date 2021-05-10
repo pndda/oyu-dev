@@ -10,6 +10,7 @@
 </head>
 
 <body <? body_class(); ?>>
+
     <header>
         <div id="navbar" class="main-navbar hide-mobile sticky-top">
             <div class="container">
@@ -22,7 +23,7 @@
                     <? wp_nav_menu(
                    array(
                        'theme_location' => 'main-menu', 
-                       'menu_id'        => 'main-menu-kiwi', 
+                       'menu_id'        => 'main-menu', 
                        'menu_class'     => 'main-menu'
                    )
                    );  ?>
@@ -103,5 +104,6 @@
         </div>
     </header>
     <div class="hidden-nvigation"></div>
+
 
   

@@ -19,14 +19,6 @@ html {
 }
 
 
-.page-description {
-    margin: 50px 50px;
-    /* text-align: center; */
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .woocommerce-page .products img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
@@ -50,6 +42,7 @@ html {
     .woocommerce ul.products[class*=columns-] li.product,
     .woocommerce-page ul.products[class*=columns-] li.product {
         width: unset !important;
+        margin: 0 0 1rem;
     }
 }
 
@@ -179,10 +172,22 @@ main {
 /* .woocommerce-tabs.wc-tabs-wrapper{
     display: none;
   } */
+.page-description {
+    margin: 50px 0;
+    padding: 0 30px;
+    /* text-align: center; */
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #primary.content-area {
-    min-height: 800px;
-    margin: 50px;
+    margin: 50px 0;
+}
+.single-container{
+ padding: 0 30px;
 }
 
 .woocommerce div.product div.summary {
@@ -190,6 +195,25 @@ main {
 
 }
 
+
+@media (min-width: 1050px) {
+
+    .page-description {
+        margin: 50px 50px;
+        /* text-align: center; */
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+    }
+
+    #primary.content-area {
+        /* min-height: 800px; */
+        margin: 50px;
+    }
+
+}
 @media (min-width: 1200px) {
     .woocommerce div.product div.summary {
         margin: 80px auto;
@@ -343,3 +367,26 @@ main {
     background-color: white;
     transition: ease-in-out .5s
 }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 768px) { 
+    /* Styles placed here will only apply to screens less than 768 pixels wide */ 
+  } 
+
+  @media (min-width: 992px) {
+      
+  }
+
+  @media only screen and (min-width: 1000px)  { 
+    /* Styles placed here will only apply to screens less than 1000 pixels wide */ 
+  }  
+
+  /* reset single product page  */
+  .clear-things{
+      clear: both;
+  }
