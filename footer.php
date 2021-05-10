@@ -23,10 +23,7 @@
                         <nav class="cred-menu">
                             <ul>
                                 <li>
-                                    <a href="">return</a>
-                                </li>
-                                <li>
-                                    <a href="">privacy policy</a>
+                                    <a href="">info & privacy policy</a>
                                 </li>
                             </ul>
                         </nav>
