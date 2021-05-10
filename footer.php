@@ -23,7 +23,7 @@
                         <nav class="cred-menu">
                             <ul>
                                 <li>
-                                    <a href="">info & privacy policy</a>
+                                    <a href="<? get_site_url()?>/privacy-policy">info & privacy policy</a>
                                 </li>
                             </ul>
                         </nav>

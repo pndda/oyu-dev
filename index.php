@@ -7,13 +7,18 @@
       <?  $classes = get_body_class();
         if(in_array('page-contact',$classes)) :?>
             <div class="page-container" >
-            <? the_content() ?>
+                <? the_content() ?>
             </div>
       <?  $classes = get_body_class();
         elseif(in_array('page-sample-page',$classes)) :?>
-        <div class="page-container" >
-        <? the_content() ?>
-        </div>
+            <div class="page-container" >
+                <? the_content() ?>
+            </div>
+        <?  $classes = get_body_class();
+        elseif(in_array('page-privacy-policy',$classes)) :?>
+            <div class="page-container" >
+                <? the_content() ?>
+            </div>
     <? else : ?> 
     <? the_content() ?>
     <? endif; ?>
