@@ -128,7 +128,12 @@ width: 100%;
 
 
 /* checkout balk  */
+.woocommerce-checkout #payment {
+    background-color: black;
+    border-radius: none;
+    border: 1px solid white;
 
+}
 #payment .woocommerce-checkout-payment{
     color: white;
     border-radius: 0;
@@ -234,6 +239,12 @@ main {
 
 }
 
+/* .woocommerce div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+  clear: unset;
+  float: left;
+  margin: 2em 0;
+  } */
+
 
 @media (min-width: 1050px) {
 
@@ -258,6 +269,10 @@ main {
         margin: 80px auto;
         width: 44%;
     }
+    /* .woocommerce div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+        width: 44%;
+        margin: 40px auto;
+        } */
 
 }
 
@@ -388,8 +403,10 @@ main {
 /* MESSAGE DETAILS  */
 
 .woocommerce-message {
-    border-top-color: orange;
-
+    border-radius: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white; 
 }
 
 .woocommerce-info {
@@ -400,13 +417,18 @@ main {
 
 
 /* empty cart */
-.button .wc-backward{
+.woocommerce a.button {
     background-color: black;
     border: 1px solid white;
     color: white;
     border-radius: unset;
 }
-
+.woocommerce a.button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: unset;
+}
 /* CART DETAILS  */
 
 .woocommerce-cart-form .product-name a:hover {
@@ -469,3 +491,11 @@ main {
       margin: .5rem;
   }
 
+
+
+  /* footer fix */ 
+
+  footer {
+   position: relative;
+   bottom: 0;
+}
