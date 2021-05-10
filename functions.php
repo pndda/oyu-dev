@@ -15,7 +15,6 @@ add_theme_support( 'starter-content');
 
 
 
-
 function mnrta_scripts() {
 
  wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'); 
@@ -28,8 +27,6 @@ function mnrta_scripts() {
 //  wp_enqueue_script('Popper');
  wp_register_script( 'Bootstrap-bundle', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js');
  wp_enqueue_script('Bootstrap-bundle');
-
-
 
 //  wp_enqueue_script( 'boostrap', get_template_directory_uri() . '/assets/js/bootstrap.js', null, null, true );
 //  wp_enqueue_script( 'boostrap-min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), true, true );
@@ -76,7 +73,7 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 
 function oyu_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
-		'thumbnail_image_width' => 150,
+		'thumbnail_image_width' => 550,
 		'single_image_width'    => 450,
 
         'product_grid'          => array(
@@ -91,12 +88,7 @@ function oyu_add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'oyu_add_woocommerce_support' );
 
-
-// function oyu_setup() {
-//     add_theme_support( 'wc-product-gallery-zoom' );
-// }
-
-// add_action( 'after_setup_theme', 'oyu_setup');
+/* Woocommerce image gallery */
 
 add_action( 'after_setup_theme', 'oyu_setup'); 
 function oyu_setup() {
@@ -118,4 +110,19 @@ function add_file_types_to_uploads($file_types){
     add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 
+    //Page Slug Body Class
+function add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+    }
+    add_filter( 'body_class', 'add_slug_body_class' );
 
+
+////// ADD FAVICON //////
+function my_favicon() { ?>
+<link rel="shortcut icon" href="/wp-content/themes/oyu/favicon.ico" >
+<?php }
+add_action('wp_head', 'my_favicon');

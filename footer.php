@@ -2,11 +2,8 @@
 <footer>
         <div class="footer-nav">
             <div class="container">
-                <nav>
+                <nav class="main-footer">
                     <ul>
-                        <li>
-                            <a href="#">oyu studio</a>
-                        </li>
                         <li>
                             <a href="mailto:info@oyustudio.com" target="_blank">info@oyustudio.com</a>
                         </li>

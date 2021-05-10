@@ -41,7 +41,7 @@
 
                     <ul class="webshop-icon">
                         <li>
-                            <a href="" class="cart">
+                            <a href="<? get_site_url()?>/cart" class="cart">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
                                     alt=""></a>
                         </li>
@@ -60,7 +60,7 @@
                     </a>
                     <ul class="mobile-navbar__list d-flex align-items-center">
                         <li>
-                            <a href="" class="cart">
+                            <a href="<? get_site_url()?>/cart" class="cart">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
                                     alt=""></a>
                         </li>
@@ -103,3 +103,5 @@
         </div>
     </header>
     <div class="hidden-nvigation"></div>
+
+  
