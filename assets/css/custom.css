@@ -127,6 +127,45 @@ width: 100%;
 }
 
 
+/* checkout balk  */
+
+#payment .woocommerce-checkout-payment{
+    color: white;
+    border-radius: 0;
+}
+#payment .woocommerce-privacy-policy-text{
+    margin-bottom: 1.2rem;
+}
+
+#payment .woocommerce-privacy-policy-text p{
+    line-height: 1.2rem;
+} 
+#payment .woocommerce-privacy-policy-link{
+    color: white; 
+    border-bottom: 1px solid white;
+
+}
+#payment .woocommerce-privacy-policy-link:hover{
+    color: white; 
+    border-bottom: unset;
+    
+}
+
+
+
+/* #payment .woocommerce button.button.alt {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: unset;
+    color: black;
+}
+
+.woocommerce button.button.alt:hover {
+    background-color: black;
+    color: white;
+
+} */
+
 /* MY ACCOUNT */
 
 form.woocommerce-form-login {
@@ -276,10 +315,19 @@ main {
 /* checkout  */
 @media (min-width: 1050px) {
     .woocommerce-page .woocommerce {
-        margin: 50px;
+        margin: 50px auto;
+        max-width: 700px;
+
     }
 
 }
+
+/* @media (min-width: 1540px) {
+    .woocommerce-page .woocommerce {
+  
+    }
+
+} */
 
 /* SIMPLE PAGES */
 
@@ -345,7 +393,18 @@ main {
 }
 
 .woocommerce-info {
-    border-top-color: orange;
+    border: 1px solid white; 
+    color: white; 
+    background-color: black; 
+}
+
+
+/* empty cart */
+.button .wc-backward{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: unset;
 }
 
 /* CART DETAILS  */
@@ -390,3 +449,23 @@ main {
   .clear-things{
       clear: both;
   }
+
+
+  /* woocommerce after payment */
+
+  .woocommerce-notice{
+      margin-bottom: 2rem; 
+  }
+
+  .woocommerce ul.order_details li {
+      padding-bottom: 0.5rem; 
+  }
+
+
+  .woocommerce-customer-details .woocommerce-customer-details--email, .woocommerce-customer-details .woocommerce-customer-details--phone{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: .5rem;
+  }
+
