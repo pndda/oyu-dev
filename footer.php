@@ -1,7 +1,7 @@
 
 <footer class="footer">
         <div class="footer-nav">
-            <div class="container">
+            <!-- <div class="container">
                 <nav class="main-footer">
                     <ul>
                         <li>
@@ -13,24 +13,23 @@
                         
                     </ul>
                 </nav>
-            </div>
+            </div> -->
             <div class="container">
                 <div class="footer-credentials">
-                    <div class="footer-cred__left d-flex justify-content-start align-items-center">
-                        <div class="copyright">
-                            copyright © 2021 oyu studio 
+                    <nav class="cred-menu">
+                        <ul>
+                            <li>
+                                <a href="<? get_site_url()?>/privacy-policy">privacy policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                            © 2021 oyu studio 
                         </div>
-                        <nav class="cred-menu">
-                            <ul>
-                                <li>
-                                    <a href="<? get_site_url()?>/privacy-policy">info & privacy policy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer-cred__right">
+                    <div class="madeby">
                         made by <a href="https://www.linkedin.com/in/panadda-manarata/">studio pndda</a>
                     </div>
+                    
                 </div>
             </div>
         </div>

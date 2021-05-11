@@ -5,6 +5,7 @@ Author: Panadda Manarata
 Version: 1.0
 */
 
+
 html,
 body,
 div,
@@ -459,7 +460,7 @@ nav ul li {
 }
 
 .footer-nav {
-  padding: 50px 15px 25px 15px;
+  padding: 50px 30px 25px 30px;
 }
 
 @media (min-width: 1050px) {
@@ -487,25 +488,8 @@ footer nav ul li {
 
 .footer-credentials {
   color: white;
-  margin-top: 20px;
-  font-size: 0.8rem;
-}
-
-.footer-credentials div {
-  padding: 3px 0;
-}
-
-.footer-credentials a {
-  color: white;
-  border-bottom: 0.8px solid  white;
-}
-
-.footer-credentials a:hover {
-  color: white;
-  border-bottom: 0.8px solid  white;
-}
-
-.footer-cred__left {
+  margin-top: 1.7rem;
+  font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,26 +501,13 @@ footer nav ul li {
           align-items: center;
 }
 
-@media (min-width: 1050px) {
-  .footer-credentials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 0.8rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-credentials .footer-cred__left {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
+.footer-credentials div {
+  padding: 3px 0;
+}
+
+.footer-credentials a:hover {
+  color: white;
+  border-bottom: 0.8px solid  white;
 }
 
 .hero__home {
