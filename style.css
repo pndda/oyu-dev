@@ -511,7 +511,7 @@ footer nav ul li {
   border-bottom: 0.8px solid  white;
 }
 
-.hero__home {
+.hero__home, .extra__home{
   min-height: 45vh;
   width: 100%;
   display: -webkit-box;
@@ -526,7 +526,7 @@ footer nav ul li {
   padding: 30px;
 }
 
-.hero__home h1 {
+.hero__home h1, .extra__home h1 {
   text-align: center;
   color: white;
   letter-spacing: 0.2px;
@@ -534,11 +534,11 @@ footer nav ul li {
 }
 
 @media (min-width: 1050px) {
-  .hero__home {
+  .hero__home, .extra__home {
     min-height: 45vh;
     padding: unset;
   }
-  .hero__home h1 {
+  .hero__home h1, .extra__home h1 {
     text-align: center;
     color: white;
     letter-spacing: 0.2px;
@@ -552,7 +552,7 @@ footer nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  margin: 50px 0 100px 0;
+  margin: 50px 0;
 }
 
 .artwork__grid {
