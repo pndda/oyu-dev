@@ -44,7 +44,7 @@
                         <li>
                             <a href="<? get_site_url()?>/cart" class="cart">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
-                                    alt=""></a>
+                                    alt="cart logo"></a>
                         </li>
                     </ul>
                 </nav>
@@ -63,7 +63,7 @@
                         <li>
                             <a href="<? get_site_url()?>/cart" class="cart">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/img/cart-white.svg"
-                                    alt=""></a>
+                                    alt="cart logo"></a>
                         </li>
 
                         <li class="mobile-navbar__list__item">
