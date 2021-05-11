@@ -38,7 +38,6 @@ html {
 }
 
 
-
 .woocommerce-page ul.products li.product {
     width: 100%;
     margin: 0 auto;
@@ -57,6 +56,15 @@ html {
     }
 }
 
+@media only screen and (min-width: 768px) { 
+   
+    .woocommerce-page ul.products li.product {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+  } 
+
 @media (min-width: 1050px) {
     .woocommerce-page ul.products li.product {
         width: 50%;
@@ -67,7 +75,9 @@ html {
 .woocommerce-shop ul.products li.product .woocommerce-loop-product__title {
     padding: 0.7em 0 2em;
     width: 90%;
-    margin: 0 5%;
+    /* margin: 0 5%; if normal img */
+    /* margin: 0 10%;  */
+    margin: 0 auto; 
     font-size: 0.8rem;
     width: fit-content;
 }
@@ -79,6 +89,9 @@ html {
     color: white;
 }
 
+/* hover effect  */
+
+
 .woocommerce-page ul.products li.product {
     opacity: 0.9;
 }
@@ -87,6 +100,8 @@ html {
     opacity: 1;
 }
 
+
+/* */
 .woocommerce-shop ul.products li.product a img {
     margin: 5% auto 0 auto;
 }
@@ -365,12 +380,18 @@ main {
     } */
 }
 
-
+.woocommerce-page .woocommerce {
+    margin: 30px;
+    margin-bottom: 50px;
+}
 
 /* checkout  */
 @media (min-width: 1050px) {
+
+ 
     .woocommerce-page .woocommerce {
         margin: 50px;
+        margin-bottom: 100px;
         max-width: 75%;
 
     }
@@ -505,9 +526,7 @@ main {
       
   }
 
-  @media only screen and (min-width: 1000px)  { 
-    /* Styles placed here will only apply to screens less than 1000 pixels wide */ 
-  }  
+
 
   /* reset single product page  */
   .clear-things{
@@ -516,6 +535,14 @@ main {
 
 
   /* woocommerce after payment */
+  .woocommerce-notices-wrapper{
+    margin: 0 30px;
+  }
+  @media (min-width: 1050px) {
+  .woocommerce-notices-wrapper{
+    margin: 0 50px;
+  }
+}
 
   .woocommerce-notice{
       margin-bottom: 2rem; 
@@ -544,4 +571,15 @@ main {
   footer {
    position: relative;
    bottom: 0;
+}
+
+a:hover{
+    color: white;
+}
+.woocommerce a.remove{
+    color: white !important;
+}
+
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img {
+    width: 80px;
 }

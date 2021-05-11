@@ -181,7 +181,8 @@ html {
 
 body {
   font-family: Helvetica;
-  background-color: #030303;
+  /* background-color: black; */
+  background-color: black;
 }
 
 a {
@@ -222,7 +223,7 @@ nav ul li {
   width: 100%;
   z-index: 30;
   padding: 50px;
-  background: #030303;
+  background: black;
 }
 
 .main-navbar .navbar-logo:hover {
@@ -290,7 +291,7 @@ nav ul li {
   left: 0;
   width: 100%;
   padding: 30px;
-  background: #030303;
+  background: black;
 }
 
 .mobile-navbar .logo {
@@ -337,7 +338,7 @@ nav ul li {
   transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-color: #030303;
+  background-color: black;
 }
 
 .mobile-nav .mobile-menu .menu-item {
