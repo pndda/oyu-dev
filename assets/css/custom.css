@@ -583,6 +583,12 @@ main {
 }
 
 
+.woocommerce-error {
+    border: 1px white solid;
+    background: black;
+    color: white;
+}
+
 /* footer fix */
 
 footer {
